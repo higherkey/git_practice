@@ -40,11 +40,6 @@ td {
   text-align: center;
 }
 
-footer aside {
-  font-size: 12px;
-  font-weight: lighter;
-  font-size: italic;
-}
 
 thead th{
   background-color: rgba(210, 210, 250, 0.5)
@@ -53,10 +48,6 @@ thead th{
 thead td {
   background-color: rgb(210,210,250);
 }
-
-/* tfoot td {
-  visibility: hidden;
-} */
 
 tr:nth-child(even) td {
   background-color: rgb(230,230,250);
@@ -70,6 +61,12 @@ caption {
   padding: 10px;
   font-size: 15px;
   font-weight: bold;
+}
+
+.info{
+  font-style: italic;
+  font-size: 12px;
+  /* font-weight: lighter; */
 }
 
 .code {
