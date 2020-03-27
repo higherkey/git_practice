@@ -1,24 +1,9 @@
 html {
   font-family: sans-serif;
-  /* background-color: skyblue; */
-  max-width: 960px;
-  padding: 2px;
-  margin: auto;
-}
-
-/* body {
   background-color: lightblue;
 } */
 
-footer {
-  padding: 50px 10px 10px 10px;
-}
-
-/* h1 {
-  background-color: white;
-} */
-
-/* table {
+table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
@@ -71,9 +56,4 @@ caption {
 .code {
   font-family: monospace;
   background-color: lightgray;
-}
-
-.return-main {
-  font-size: 20px;
-  font-weight: bold;
 }
