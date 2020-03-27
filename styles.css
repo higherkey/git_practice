@@ -1,6 +1,21 @@
 html {
   font-family: sans-serif;
+  background-color: skyblue;
+  max-width: 505px;
+  padding: 2px;
+  margin: auto;
+}
+
+body {
   background-color: lightblue;
+}
+
+footer {
+  padding: 50px 10px 10px 10px;
+}
+
+h1 {
+  background-color: white;
 }
 
 table {
@@ -23,6 +38,12 @@ th {
 
 td {
   text-align: center;
+}
+
+footer aside {
+  font-size: 12px;
+  font-weight: lighter;
+  font-size: italic;
 }
 
 thead th{
@@ -54,4 +75,9 @@ caption {
 .code {
   font-family: monospace;
   background-color: lightgray;
+}
+
+.return-main {
+  font-size: 20px;
+  font-weight: bold;
 }
