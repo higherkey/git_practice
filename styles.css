@@ -1,31 +1,31 @@
 html {
   font-family: sans-serif;
-  background-color: skyblue;
-  max-width: 505px;
+  /* background-color: skyblue; */
+  max-width: 960px;
   padding: 2px;
   margin: auto;
 }
 
-body {
+/* body {
   background-color: lightblue;
-}
+} */
 
 footer {
   padding: 50px 10px 10px 10px;
 }
 
-h1 {
+/* h1 {
   background-color: white;
-}
+} */
 
-table {
+/* table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
   font-size: 0.8rem;
   min-width: 300px;
   max-width: 500px;
-}
+} 
 
 td, th {
   border: 1px solid rgb(190,190,190);
@@ -40,14 +40,13 @@ td {
   text-align: center;
 }
 
-
 thead th{
   background-color: rgba(210, 210, 250, 0.5)
 }
 
 thead td {
   background-color: rgb(210,210,250);
-}
+} 
 
 tr:nth-child(even) td {
   background-color: rgb(230,230,250);
@@ -55,7 +54,7 @@ tr:nth-child(even) td {
 
 tr:nth-child(odd) td {
   background-color: rgb(240,240,245);
-}
+} */
 
 caption {
   padding: 10px;
