@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML/CSS Reference</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML Table Reference</h1>
+    </header>
+
+    <main>
+      <!-- Codecademy Table -->
+      <table>
+        <caption>Test Caption</caption>
+        <thead>
+          <tr> <!-- table -->
+            <th scope="col">Tag</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr> <!-- thead -->
+            <th scope="row" class="code">&lt;table&gt;</th>
+            <td>Table</td>
+            <td>The wrapper element for all HTML tables.</td>
+          </tr>
+          <tr> <!-- tbody -->
+            <th scope="row" class="code">&lt;thead&gt;</th>
+            <td>Table Head</td>
+            <td>The set of rows defining the column headers in a table.</td>
+          </tr>
+          <tr> <!-- tr -->
+            <th scope="row" class="code">tr</th>
+            <td>Table Row</td>
+            <td>The table row container.</td>
+          </tr>
+          <tr> <!-- td -->
+            <th scope="row" class="code">td</th>
+            <td>Table Data</td>
+            <td>The table data container</td>
+          </tr>
+          <tr> <!-- tfoot -->
+            <th scope="row" class="code">tfoot</th>
+            <td>Table Foot</td>
+            <td>The set of rows defining the footer in a table.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3" hidden="true">This footer should be hidden</td>
+        </tfoot>
+      </table>
+
+      <!-- My Table -->
+      <table>
+        <caption>CSS Reference</caption>
+        <thead>
+          <tr>
+            <th scope="col">Tag</th>
+            <th scope="col">Values</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="code" scope="row">visibility</th>
+            <td scope="code">visible, hidden, collapse</td>
+            <td>Visibility</td>
+            <td>Shows or hides an element without changing the layout of a document. Applies to <span class="code">&lt;table&gt;</span>s</td>
+          </tr>
+          <tr>
+            <th class="code" scope="row">:nth-child([])</th>
+            <td scope="code">odd, even, 3</td>
+            <td>Nth child</td>
+            <td>Allows an patterened style to be applied to a table's rows/columns</td>
+          </tr>
+          <!-- <tr>
+            <th class="code" scope="row"></th>
+            <td scope="code"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="code" scope="row"></th>
+            <td scope="code"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="code" scope="row"></th>
+            <td scope="code"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="code" scope="row"></th>
+            <td scope="code"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th class="code" scope="row"></th>
+            <td scope="code"></td>
+            <td></td>
+            <td></td>
+          </tr> -->
+        </tbody>
+        <tfoot hidden="false">
+          <td colspan="4">More to be added!</td>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+
+  <footer>
+      <p class="info">Designed by Isaac, 03/26/20</p>
+  </footer>
+</html>
