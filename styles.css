@@ -1,7 +1,14 @@
 html {
   font-family: sans-serif;
   background-color: lightblue;
-} */
+  margin: auto;
+  max-width: 600px;
+  padding: 2px;
+}
+
+footer {
+  padding: 10px;
+}
 
 table {
   border-collapse: collapse;
@@ -9,12 +16,18 @@ table {
   letter-spacing: 1px;
   font-size: 0.8rem;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 600px;
 } 
 
 td, th {
   border: 1px solid rgb(190,190,190);
   padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+  background-color: skyblue;
+  padding: 10px 2px;
 }
 
 th {
@@ -40,12 +53,6 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
   background-color: rgb(240,240,245);
 } */
-
-caption {
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-}
 
 .info{
   font-style: italic;
