@@ -12,10 +12,6 @@ table {
   max-width: 500px;
 }
 
-h1 {
-  /* text-align: center; */
-}
-
 td, th {
   border: 1px solid rgb(190,190,190);
   padding: 10px 20px;
