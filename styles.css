@@ -1,15 +1,51 @@
-html {
+body {
   font-family: sans-serif;
-  background-color: lightblue;
+  background: lightblue;
   margin: auto;
+  min-width: 400px;
   max-width: 600px;
-  padding: 2px;
 }
 
 footer {
   padding: 10px;
 }
 
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.title {
+  /* border: 1px solid black; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 96%) center center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+.info{
+  font-style: italic;
+  font-size: 12px;
+  /* font-weight: lighter; */
+}
+
+.code {
+  font-family: monospace;
+  background-color: lightgray;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Table Formatting */
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
@@ -18,17 +54,6 @@ table {
   min-width: 300px;
   max-width: 600px;
 } 
-
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
-}
-
-h1 {
-  text-align: center;
-  background-color: skyblue;
-  padding: 10px 2px;
-}
 
 th {
   background-color: rgb(235,235,235);
@@ -52,15 +77,4 @@ tr:nth-child(even) td {
 
 tr:nth-child(odd) td {
   background-color: rgb(240,240,245);
-} */
-
-.info{
-  font-style: italic;
-  font-size: 12px;
-  /* font-weight: lighter; */
-}
-
-.code {
-  font-family: monospace;
-  background-color: lightgray;
 }
