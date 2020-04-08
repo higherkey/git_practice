@@ -6,6 +6,11 @@ body {
   max-width: 600px;
 }
 
+.grid {
+  display: grid;
+  grid: 1hr repeat(6, 100px) 1hr / auto-flow;
+}
+
 footer {
   padding: 10px;
 }
@@ -29,8 +34,9 @@ h2 {
   margin: auto;
   background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 96%) center center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
-.info{
+.info {
   font-style: italic;
   font-size: 12px;
   /* font-weight: lighter; */
@@ -43,6 +49,11 @@ h2 {
 
 .underline {
   text-decoration: underline;
+}
+
+/* List Formatting */
+.project-list {
+  line-height: 2;
 }
 
 /* Table Formatting */

@@ -1,0 +1,72 @@
+ .topnav {
+     background-color:#00004d;
+     overflow: hidden;
+     height: 90px;
+ }
+ .topnav a {
+    color:#ffa64d;
+    padding: 25px 10px;
+    float: left;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: 500;
+ }
+ 
+.topnav a:hover {
+  background-color: #666;
+  color: white;
+}
+
+.content{
+    width:850px;
+    height: 700px;
+    border: 1px solid grey;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -200px;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+h1{
+    font-family: arial;
+}
+
+p{
+    text-align: left;
+    font-family: arial;
+}
+
+body {
+     background-color: #a6a6a6;
+ }
+ 
+.linkedin{
+    position: relative;
+    top: 225px;    
+    left: 75px;
+}
+
+.twitter{
+    position: relative;
+    top: 250px;    
+    left: 75px;
+}
+
+.facebook{
+    position: relative;
+    top: 275px;    
+    left: 75px;
+}
+
+.fam{
+    position: relative;
+    bottom: -40px;    
+    right: 0px;
+}
