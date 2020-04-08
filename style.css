@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+  background: lightblue;
+  margin: auto;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+
+
+footer {
+  padding: 10px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+.title {
+  /* border: 1px solid black; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Text Styling */
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.info {
+  font-style: italic;
+  font-size: 12px;
+  /* font-weight: lighter; */
+}
+
+.code {
+  font-family: monospace;
+  background-color: lightgray;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.coming-soon {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: smaller;
+}
+
+
+/* List Formatting */
+.project-list {
+  padding-left: 2em;
+}
+
+.project-list li {
+  line-height: 2;
+}
+
+.project-list h4 {
+  margin-top: 1.5em;
+  margin-bottom: .75em;
+}
+
+ul.multi-level-list {
+  padding-inline-start: 1em;
+}
+
+.multi-level-list li {
+  margin-left: 2em;
+}
+
+
+
+/* Table Formatting */
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  min-width: 300px;
+  max-width: 600px;
+} 
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+thead th{
+  background-color: rgba(210, 210, 250, 0.5)
+}
+
+thead td {
+  background-color: rgb(210,210,250);
+} 
+
+tr:nth-child(even) td {
+  background-color: rgb(230,230,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(240,240,245);
+}
