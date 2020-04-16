@@ -18,7 +18,7 @@
   color: white;
 }
 
-.content{
+.content {
     width:850px;
     height: 700px;
     border: 1px solid grey;
@@ -34,39 +34,46 @@
     background-color: #f2f2f2;
 }
 
-h1{
+h1 {
     font-family: arial;
 }
 
-p{
+p {
     text-align: left;
     font-family: arial;
 }
 
 body {
      background-color: #a6a6a6;
- }
- 
-.linkedin{
+}
+
+
+.linkedin {
     position: relative;
     top: 225px;    
     left: 75px;
 }
 
-.twitter{
+.twitter {
     position: relative;
     top: 250px;    
     left: 75px;
 }
 
-.facebook{
+.facebook {
     position: relative;
     top: 275px;    
     left: 75px;
 }
 
-.fam{
+.fam {
     position: relative;
     bottom: -40px;    
     right: 0px;
+}
+
+#main-return {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
 }

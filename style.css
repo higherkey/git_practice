@@ -6,15 +6,16 @@ body {
   max-width: 800px;
 }
 
-
-
 footer {
   padding: 10px;
 }
 
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 .title {
@@ -25,17 +26,9 @@ td, th {
   position: relative;
   padding: 10px;
   margin: auto;
-  background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%);
+  background-color: cyan;
+  /* background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%); */
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-/* Text Styling */
-h1 {
-  font-size: 35px;
-}
-
-h2 {
-  font-size: 28px;
 }
 
 .info {
@@ -59,8 +52,14 @@ h2 {
   font-size: smaller;
 }
 
+#main-return {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
 
-/* List Formatting */
+
+/***** List Formatting *****/
 .project-list {
   padding-left: 2em;
 }
@@ -83,8 +82,7 @@ ul.multi-level-list {
 }
 
 
-
-/* Table Formatting */
+/***** Table Formatting *****/
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
@@ -94,6 +92,11 @@ table {
   max-width: 600px;
 } 
 
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
 th {
   background-color: rgb(235,235,235);
 }
@@ -102,7 +105,7 @@ td {
   text-align: center;
 }
 
-thead th{
+thead th {
   background-color: rgba(210, 210, 250, 0.5)
 }
 

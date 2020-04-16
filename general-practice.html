@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 
+<style>
+  .title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    width: 100%;
+    background-color: lightblue;
+    box-shadow: 0 0 10px 10px lightblue;
+  }
+  .box {
+    /* display: flex; */
+    margin: 5px;
+    text-align: center;
+  }
+  #main-return {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+
+  /* Grid Styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(5, 20%);
+    position: absolute;
+    padding: 5px;
+    margin: auto;
+    top: 5%;
+    right: 0;
+    bottom: 5%;
+    left: 0;
+    background-color: lightgray;
+    height: 75%;
+    box-shadow: 0 0 5px 5px lightgray;
+    width: 850px;
+    z-index: -1;
+  }
+
+  #gradient {
+    background: linear-gradient(white, lightgray);
+  }
+  #gradient:hover {
+    background: linear-gradient(lightgray, white);
+  }
+
+  #orange {
+    background-color: orange;
+  }
+  #orange:hover {
+      transform: skewY(25deg);
+  }
+
+  #cyan {
+    background-color: cyan;
+  }
+  #cyan:hover {
+    transform: scale(1.5);
+  }
+
+  #raspberry {
+    position: relative;
+    background-color: #ff007F;
+  }
+  #raspberry:hover {
+    right: 30px;
+    bottom: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px #ff007F;
+  }
+
+  #heart {
+    background-color: pink;
+  }
+  #heart:hover {
+
+  }
+
+
+</style>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="practice-style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="practice-style.css"> -->
     <title>General Practice</title>
   </head>
 
@@ -14,16 +97,22 @@
     </header>
     
     <main>
-
+      <div class="grid-container">
+        <div class="box" id="gradient">gradient</div>
+        <div class="box" id="orange">orange</div>
+        <div class="box" id="cyan">cyan</div>
+        <div class="box" id="raspberry">raspberry</div>
+        <!-- <div class="box" id="heart">heart</div> -->
+      </div>     
     </main>
 
     <footer>
-      <nav><a href="./index.html" class="return-main">Return to Main</a></nav>
-      <br>
+      <nav id="main-return"><a href="./index.html" class="return-main">Return to Main</a></nav>
+      <!-- <br>
       <div>
         <p class="info">Designed by Isaac</p>
         <p class="info">Last updated: 04/08/20</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
