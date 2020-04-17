@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 
 <style>
+  body {
+    margin: 0;
+  }
   .title {
     text-align: center;
-    margin-top: 0;
+    margin: 0 10px;
     padding-top: 10px;
-    padding-bottom: 2px;
-    width: 100%;
-    background-color: lightblue;
-    box-shadow: 0 0 10px 10px lightblue;
+    padding-bottom: 10px;
+    background-color: rgb(173, 216, 230);
+    box-shadow: 10px 0 rgb(100, 160, 180), -10px 0 0 rgb(100, 160, 180);
+    border-left: 2px solid rgb(2, 82, 109);
+    /* border-right: 2px solid rgb(2, 82, 109); */
   }
-  .box {
-    /* display: flex; */
-    margin: 5px;
-    text-align: center;
-  }
+
   #main-return {
     position: fixed;
     bottom: 1em;
     right: 1em;
   }
 
-  /* Grid Styling */
+/***** Grid Styling *****/
   .grid-container {
     display: grid;
     grid-template-columns: repeat(7, 14%);
@@ -37,9 +37,12 @@
     height: 75%;
     box-shadow: 0 0 5px 5px lightgray;
     width: 850px;
-    z-index: -1;
   }
-
+  .box {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
   #gradient {
     background: linear-gradient(white, lightgray);
   }
@@ -47,25 +50,25 @@
     background: linear-gradient(lightgray, white);
   }
 
-  #orange {
+  #skew {
     background-color: orange;
   }
-  #orange:hover {
-      transform: skewY(25deg);
+  #skew:hover {
+    transform: skewY(25deg);
   }
 
-  #cyan {
+  #scale {
     background-color: cyan;
   }
-  #cyan:hover {
+  #scale:hover {
     transform: scale(1.5);
   }
 
-  #raspberry {
+  #crescent-shadow {
     position: relative;
     background-color: #ff007F;
   }
-  #raspberry:hover {
+  #crescent-shadow:hover {
     right: 30px;
     bottom: 10px;
     background-color: transparent;
@@ -99,10 +102,10 @@
     <main>
       <div class="grid-container">
         <div class="box" id="gradient">gradient</div>
-        <div class="box" id="orange">orange</div>
-        <div class="box" id="cyan">cyan</div>
-        <div class="box" id="raspberry">raspberry</div>
-        <!-- <div class="box" id="heart">heart</div> -->
+        <div class="box" id="skew">skew</div>
+        <div class="box" id="scale">scale</div>
+        <div class="box" id="crescent-shadow">crescent shadow</div>
+        <div class="box" id="heart">heart</div>
       </div>     
     </main>
 
