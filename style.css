@@ -1,13 +1,23 @@
+html {
+  background: rgb(218, 237, 245);
+}
+
 body {
   font-family: sans-serif;
-  background: lightblue;
   margin: auto;
   min-width: 400px;
   max-width: 800px;
 }
 
+main {
+  position: relative;
+  left: 5%;
+}
+
 footer {
   padding: 10px;
+  position: relative;
+  left: 5%;
 }
 
 h1 {

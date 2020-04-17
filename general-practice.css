@@ -42,6 +42,7 @@ body {
   background-color: lightgray;
   height: 77%;
   width: 850px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.19), 0 0px 6px rgba(0, 0, 0, 0.23);
 }
 
 .box {
