@@ -1,0 +1,101 @@
+html {
+  background-color: rgb(244, 250, 252);
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(173, 216, 230);
+  box-shadow: 10px 0 rgb(100, 160, 180), -10px 0 0 rgb(100, 160, 180);
+  border-left: 2px solid rgb(2, 82, 109);
+  border-right: 2px solid rgb(2, 82, 109);
+}
+
+#main-return {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+/***** Grid Styling *****/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 14.2%);
+  grid-template-rows: repeat(5, 20%);
+  position: absolute;
+  border-radius: 7px;
+  padding: 5px;
+  margin: auto;
+  top: 8%;
+  right: 0;
+  bottom: 5%;
+  left: 0;
+  background-color: lightgray;
+  height: 77%;
+  width: 850px;
+}
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+#gradient {
+  background: linear-gradient(white, lightgray);
+}
+
+#gradient:hover {
+  background: linear-gradient(lightgray, white);
+}
+
+#skew {
+  background-color: orange;
+}
+
+#skew:hover {
+  transform: skewY(25deg);
+}
+
+#scale {
+  background-color: cyan;
+}
+
+#scale:hover {
+  transform: scale(1.5);
+}
+
+#crescent-shadow {
+  position: relative;
+  background-color: #ff007F;
+}
+
+#crescent-shadow:hover {
+  right: 30px;
+  bottom: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 0px #ff007F;
+}
+
+#heart {
+  background-color: pink;
+}
+
+#heart:hover {
+  
+}

@@ -5,12 +5,15 @@ body {
   min-width: 400px;
   max-width: 800px;
 }
+
 footer {
   padding: 10px;
 }
+
 h1 {
   font-size: 35px;
 }
+
 h2 {
   font-size: 28px;
 }
@@ -25,20 +28,24 @@ h2 {
   margin: auto;
   background-color: lightblue;
   /* background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%); */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 .info {
   font-style: italic;
   font-size: 12px;
   /* font-weight: lighter; */
 }
+
 .code {
   font-family: monospace;
   background-color: lightgray;
 }
+
 .underline {
   text-decoration: underline;
 }
+
 .coming-soon {
   text-transform: uppercase;
   font-style: italic;
@@ -52,12 +59,15 @@ h2 {
 }
 
 /***** List Formatting *****/
+
 .project-list {
   padding-left: 2em;
 }
+
 .project-list li {
   line-height: 2;
 }
+
 .project-list h4 {
   margin-top: 1.5em;
   margin-bottom: .75em;
