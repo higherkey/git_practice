@@ -32,7 +32,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(7, 14.2%);
+  grid-template-columns: repeat(7, 14.286%);
   grid-template-rows: repeat(5, 20%);
   position: absolute;
   border-radius: 7px;
@@ -50,16 +50,22 @@ body {
 }
 
 .box {
+  position: relative;
   margin: 5px;
   padding: 5px;
   text-align: center;
+  /* border: 1px solid transparent; */
   border-radius: 7px;
-  height: 100px;
-  width: 100px;
+  height: 99px;
+  width: 99px;
 }
 
 .test {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.grid-container>label {
+  text-align: center;
 }
 
 #gradient {
@@ -88,7 +94,7 @@ body {
 
 #crescent-shadow {
   position: relative;
-  background-color: #ff007F;
+  background-color: rgb(255, 0, 127);
 }
 
 #crescent-shadow:hover {
@@ -96,13 +102,159 @@ body {
   bottom: 10px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 25px 10px 0px 0px #ff007F;
+  box-shadow: 25px 10px 0px 0px rgb(255, 0, 127);
 }
 
 #heart {
   background-color: pink;
+  transform: rotate(-45deg);
+  height: 40px;
+  width: 45px;
+  border-radius: 0%;
+  margin: auto;
+  top: 20%;
+}
+#heart::before {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+}
+#heart::after {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
 }
 
-#heart:hover {
-  
+#animation-infinite {
+  background-color: transparent;
+}
+
+#animation-infinite:hover {
+  animation-name: colorful, out-back-clockwise;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: cyan;
+  }
+  75% {
+    background-color: rgb(255, 0, 127);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes left-right {
+  25% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+  75% {
+    left: -10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes out-back-clockwise {
+  0% {
+    bottom: 0;
+  }
+  12.5% {
+    bottom: 10px;
+  }
+  25% {
+    bottom: 0;
+    left: 0;
+  }
+  37.5% {
+    left: 10px;
+  }
+  50% {
+    left: 0;
+    top: 0;
+  }
+  62.5% {
+    top: 10px;
+  }
+  75% {
+    top: 0;
+    right: 0;
+  }
+  87.5% {
+    right: 10px;
+  }  
+  100% {
+    right: 0;
+  }
+}
+
+/* @keyframes out-back-clockwise {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  12.5% {
+    bottom: 10;
+    left: 0;
+  }
+  25% {
+    bottom: 0;
+    left: 0;
+  }
+  37.5% {
+    bottom: 0;
+    left: 10;
+  }
+  50% {
+    left: 0;
+    top: 0;
+  }
+  62.5% {
+    bottom: 0;
+    left: 0;  }
+  75% {
+    bottom: 0;
+    left: 0;  
+  }
+  87.5% {
+    bottom: 0;
+    left: 0;  }  
+  100% {
+    bottom: 0;
+    left: 0;  }
+} */
+
+#animation-change {
+  background-color: transparent;
+}
+
+#animation-change:hover {
+  animation-name: change;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change {
+  100% {
+    background-color: #00ff80;
+  }
 }
