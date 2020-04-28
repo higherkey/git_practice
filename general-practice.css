@@ -17,7 +17,7 @@ body {
   padding-bottom: 10px;
   background-color: rgb(173, 216, 230);
   box-shadow: 20px 0 rgb(100, 160, 180), -20px 0 0 rgb(100, 160, 180);
-  border-left:  3px solid rgb(2, 82, 109);
+  border-left: 3px solid rgb(2, 82, 109);
   border-right: 3px solid rgb(2, 82, 109);
   z-index: 2;
 }
@@ -29,7 +29,6 @@ body {
 }
 
 /***** Grid Styling *****/
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(7, 14.286%);
@@ -114,6 +113,7 @@ body {
   margin: auto;
   top: 20%;
 }
+
 #heart::before {
   content: "";
   background-color: pink;
@@ -124,6 +124,7 @@ body {
   height: 50px;
   width: 50px;
 }
+
 #heart::after {
   content: "";
   background-color: pink;
@@ -135,14 +136,14 @@ body {
   left: 25px;
 }
 
-#animation-infinite {
+#animation-color {
   background-color: transparent;
 }
 
-#animation-infinite:hover {
-  animation-name: colorful, out-back-clockwise;
+#animation-color:hover {
+  animation-name: colorful;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes colorful {
@@ -160,90 +161,6 @@ body {
   }
 }
 
-@keyframes left-right {
-  25% {
-    left: 0;
-  }
-  50% {
-    left: 10px;
-  }
-  75% {
-    left: -10px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-@keyframes out-back-clockwise {
-  0% {
-    bottom: 0;
-  }
-  12.5% {
-    bottom: 10px;
-  }
-  25% {
-    bottom: 0;
-    left: 0;
-  }
-  37.5% {
-    left: 10px;
-  }
-  50% {
-    left: 0;
-    top: 0;
-  }
-  62.5% {
-    top: 10px;
-  }
-  75% {
-    top: 0;
-    right: 0;
-  }
-  87.5% {
-    right: 10px;
-  }  
-  100% {
-    right: 0;
-  }
-}
-
-/* @keyframes out-back-clockwise {
-  0% {
-    bottom: 0;
-    left: 0;
-  }
-  12.5% {
-    bottom: 10;
-    left: 0;
-  }
-  25% {
-    bottom: 0;
-    left: 0;
-  }
-  37.5% {
-    bottom: 0;
-    left: 10;
-  }
-  50% {
-    left: 0;
-    top: 0;
-  }
-  62.5% {
-    bottom: 0;
-    left: 0;  }
-  75% {
-    bottom: 0;
-    left: 0;  
-  }
-  87.5% {
-    bottom: 0;
-    left: 0;  }  
-  100% {
-    bottom: 0;
-    left: 0;  }
-} */
-
 #animation-change {
   background-color: transparent;
 }
@@ -256,5 +173,21 @@ body {
 @keyframes change {
   100% {
     background-color: #00ff80;
+  }
+}
+
+#animation-opacity {
+  background-color: white;
+}
+
+#animation-opacity:hover {
+  animation-name: change-opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-opacity {
+  50% {
+    opacity: 0;
   }
 }
