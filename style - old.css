@@ -1,0 +1,92 @@
+html {
+  background: rgb(218, 237, 245);
+}
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+main {
+  position: relative;
+  left: 5%;
+}
+
+footer {
+  padding: 10px;
+  position: relative;
+  left: 5%;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.title {
+  /* border: 1px solid black; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  background-color: lightblue;
+  /* background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.info {
+  font-style: italic;
+  font-size: 12px;
+  /* font-weight: lighter; */
+}
+
+.code {
+  font-family: monospace;
+  background-color: lightgray;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.coming-soon {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: smaller;
+}
+
+#main-return {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+/***** List Formatting *****/
+
+.project-list {
+  padding-left: 2em;
+}
+
+.project-list li {
+  line-height: 2;
+}
+
+.project-list h4 {
+  margin-top: 1.5em;
+  margin-bottom: .75em;
+}
+
+ul.multi-level-list {
+  padding-inline-start: 1em;
+}
+
+.multi-level-list li {
+  margin-left: 2em;
+}

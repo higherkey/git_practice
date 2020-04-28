@@ -1,23 +1,32 @@
+:root {
+  --default-bg-color: rgb(244, 250, 252);
+  --default-accent-purple: #b4ade6;
+  --default-accent-light-purple: #ede7f5;
+  --default-accent-green: #ade6bb;
+  --default-title-bg-color: lightblue;
+  --default-max-width: 800px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
 html {
-  background: rgb(218, 237, 245);
+  background-color: white;
 }
 
 body {
-  font-family: sans-serif;
+  background-color: var(--default-bg-color);
   margin: auto;
+  box-shadow: 0 0 10px 10px var(--default-bg-color);
   min-width: 400px;
-  max-width: 800px;
-}
-
-main {
-  position: relative;
-  left: 5%;
+  max-width: var(--default-max-width);
 }
 
 footer {
-  padding: 10px;
   position: relative;
   left: 5%;
+  padding: 10px;
 }
 
 h1 {
@@ -29,22 +38,22 @@ h2 {
 }
 
 .title {
-  /* border: 1px solid black; */
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
   position: relative;
+  text-align: center;
   padding: 10px;
   margin: auto;
-  background-color: lightblue;
-  /* background: linear-gradient(22deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,.7) 100%); */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--default-title-bg-color);
+  border-left: .5px dotted black;
+  border-right: .5px dotted black;
+  border-bottom: .5px dotted black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 10px rgba(0, 0, 0, 0.23);
 }
 
 .info {
   font-style: italic;
   font-size: 12px;
-  /* font-weight: lighter; */
 }
 
 .code {
@@ -62,10 +71,12 @@ h2 {
   font-size: smaller;
 }
 
-#main-return {
+#return {
+  display: grid;
   position: fixed;
   bottom: 1em;
   right: 1em;
+  font-size: smaller;
 }
 
 /***** List Formatting *****/

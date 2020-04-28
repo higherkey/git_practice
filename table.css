@@ -1,4 +1,5 @@
 table {
+  margin: auto;
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   letter-spacing: 1px;
@@ -21,15 +22,11 @@ td {
 }
 
 thead th {
-  background-color: rgba(210, 210, 250, 0.5)
-}
-
-thead td {
-  background-color: rgb(210, 210, 250);
+  background-color: var(--default-accent-purple, plum);
 }
 
 tr:nth-child(even) td {
-  background-color: rgb(230, 230, 250);
+  background-color: var(--default-accent-light-purple, lightpink);
 }
 
 tr:nth-child(odd) td {

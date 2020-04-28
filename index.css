@@ -1,0 +1,12 @@
+body {
+  background-color: var(--default-bg-color);
+  margin: auto;
+  min-width: 400px;
+  max-width: 800px;
+  box-shadow: 0 0 10px 10px var(--default-bg-color);
+}
+
+main {
+  position: relative;
+  left: 5%;
+}
