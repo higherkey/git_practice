@@ -19,7 +19,7 @@
     <table>
       <caption><h2 class="table-caption">Reference</h2></caption>
       <thead>
-        <tr>
+        <tr class="table-headers">
           <th scope="col">Subject</th>
           <th scope="col">Code</th>
           <th scope="col">Description</th>
@@ -27,31 +27,38 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="semantic-meaning">
           <th class="col-subject" scope="row">Semantic Meaning</th>
-          <td class="col-code"><span class="code">&lt;main&gt;</span>, <span class="code">&lt;header&gt;</span>, <span class="code">&lt;footer&gt;</span>, <span class="code">&lt;nav&gt;</span>, <span class="code">&lt;article&gt;</span>, <span class="code">&lt;aside&gt;</span>, etc.</td>
-          <td class="col-description">Using these tags introduced in HTML5 indicates the type of information the element contains. Asistive technologies use this information for better page summaries and navigation options.</td>
+          <td class="col-code"><span class="code">&lt;main&gt;</span>, <span class="code">&lt;header&gt;</span>, <span
+              class="code">&lt;footer&gt;</span>, <span class="code">&lt;nav&gt;</span>, <span
+              class="code">&lt;article&gt;</span>, <span class="code">&lt;aside&gt;</span>, etc.</td>
+          <td class="col-description">Using these tags introduced in HTML5 indicates the type of information the element
+            contains. Asistive technologies use this information for better page summaries and navigation options.</td>
           <td class="col-example"><span class="code"></span></td>
         </tr>
-        <tr> 
+        <tr class="alternate-text">
           <th class="col-subject" scope="row">Alternate Text</th>
           <td class="col-code"><span class="code">&lt;alt=""&gt;</span></td>
-          <td class="col-description">Provide a text alternative for an image in case an image fails to load, or for a screen reader.</td>
+          <td class="col-description">Provide a text alternative for an image in case an image fails to load, or for a
+            screen reader.</td>
           <td class="col-example"><span class="code">&lt;img src="my-cat.png" alt="My cat, Mr. Fluff"&gt;</span></td>
         </tr>
-        <tr>
+        <tr class="headings">
           <th class="col-subject" scope="row">Headings</th>
           <td class="col-code"><span class="code">&lt;h1&gt;</span>, <span class="code">&lt;h2&gt;</span>, etc.</td>
-          <td class="col-description">Screen readers can use headings to summarize, so it's important to use them orderly, and style as needed with CSS. Good example of <span class="italic">semantic meaning.</span></td>
+          <td class="col-description">Screen readers can use headings to summarize, so it's important to use them
+            orderly, and style as needed with CSS. Good example of <span class="italic">semantic meaning.</span></td>
           <td class="col-example">
             Good: <span class="code">&lt;h1&gt;&lt;/h1&gt;...&lt;h2&gt;&lt;/h2&gt;</span><br>
             Bad: <span class="code">&lt;h1&gt;&lt;/h1&gt;...&lt;h4&gt;&lt;/h4&gt;</span>
           </td>
         </tr>
-        <tr>
+        <tr class="figures">
           <th class="col-subject" scope="row">Figures</th>
-          <td class="col-code"><span class="code">&lt;figure&gt;</span>, <span class="code">&lt;figcaption&gt;</span></td>
-          <td class="col-description">Using these two elements provides greater accessibility through semantic grouping and a text alternative.</td>
+          <td class="col-code"><span class="code">&lt;figure&gt;</span>, <span class="code">&lt;figcaption&gt;</span>
+          </td>
+          <td class="col-description">Using these two elements provides greater accessibility through semantic grouping
+            and a text alternative.</td>
           <td class="col-example">
             <span class="code">&lt;figure&gt;</span><br>
             <span class="wspace-pre">&Tab;</span><span class="code">&lt;img...&gt;...</span><br>
@@ -59,10 +66,11 @@
             <span class="code">&lt;/figure&gt;</span>
           </td>
         </tr>
-        <tr>
+        <tr class="fieldset">
           <th class="col-subject" scope="row">Fieldset</th>
           <td class="col-code"><span class="code">&lt;fieldset&gt;</span>, <span class="code">&lt;legend&gt;</span></td>
-          <td class="col-description">Used to group radio buttons. <span class="code">&lt;legend&gt;</span> is often used to provide a description.</td>
+          <td class="col-description">Used to group radio buttons. <span class="code">&lt;legend&gt;</span> is often
+            used to provide a description.</td>
           <td class="col-example">
             <span class="code">&lt;fieldset&gt;</span><br>
             <span class="wspace-pre">&Tab;</span><span class="code">&lt;legend&gt;...</span><br>
@@ -70,11 +78,25 @@
             <span class="code">&lt;/fieldset&gt;</span>
           </td>
         </tr>
+        <tr class="tabindex">
+          <th class="col-subject" scope="row" tabindex="0">Tabindex</th>
+          <td class="col-code" tabindex="0"><span class="code">tabindex</span></td>
+          <td class="col-description">Used to indicate an element can be focused on, i.e. tabbed to. '0' flows with
+            other elements,
+            positive values give a hierarchy, and negative values are complicated.
+            Take care before using positive values, as they interrupt the flow of the page.
+            <span class="code" tabindex="0">tabindex</span> also enables the CSS pseudo-class :focus.</td>
+          <td class="col-example">
+            <span class="code" tabindex="1">&lt;div tabindex="1"&gt;</span><br>
+            <span class="code" tabindex="0">&lt;div tabindex="0"&gt;</span><br>
+            <span class="code" tabindex="2" id="focus-example">&lt;div tabindex="2" :focus&gt;</span>
+          </td>
+        </tr>
         <!-- <tr>
           <th class="col-subject" scope="row"></th>
           <td class="col-code">&lt;&gt;<span class="code"></span></td>
           <td class="col-description"></td>
-          <td class="col-example"><span class="code"></span></td>
+          <td class="col-example"><span class="code">&lt;&gt;</span></td>
         </tr> -->
       </tbody>
     </table>
@@ -83,8 +105,8 @@
   <footer>
     <p>Source: <a href="https://www.freecodecamp.org/learn">freeCodeCamp.org</a></p>
     <div id="return">
-      <a href="practice-spaces.html" class="return-main">Back</a>
-      <a href="index.html" class="return-main">Return to Main</a>
+      <a href="practice-spaces.html" class="return-main" accesskey="b">Back</a>
+      <a href="index.html" class="return-main" accesskey="m">Return to Main</a>
     </div>
   </footer>
 </body>
