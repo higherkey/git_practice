@@ -1,25 +1,38 @@
 .grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main sidebar1"
+    "main main sidebar2"
+    "footer footer footer";
+  gap: 5px;
   background: lightgray;
+  min-height: 100vh;
+  font-size: 40px;
   width: 100%;
-  font-size: 40px;;
 }
 
 #box1 {
-  background: palevioletred
+  background: palegreen;
+  grid-area: header;
 }
 
 #box2 {
-  background: palegreen
+  background: palegoldenrod;
+  grid-area: main;
 }
 
 #box3 {
   background: Lightpink;
+  grid-area: sidebar1;
 }
 
 #box4 {
-  background: lightsalmon
+  background: lightsalmon;
+  grid-area: sidebar2;
 }
 
 #box5 {
-  background: paleturquoise
+  background: paleturquoise;
+  grid-area: footer;
 }
