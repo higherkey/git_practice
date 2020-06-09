@@ -5,11 +5,33 @@ h2 {
 
 .flex-container {
   display: flex;
-  border: 1px dotted gray;
-  height: 135px;
+  border: 1px dotted lightgray;
+  background-color: white;
+  height: 100px;
   margin: auto;
 }
 
+.flexbox {
+  width: 25%;
+  height: 75%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.display-container {
+  width: 300px;
+  margin: auto;
+}
+
+#box-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 80vh;
+}
+
+/* Visuals */
 .justify-center {
   justify-content: center;
 }
@@ -34,16 +56,8 @@ h2 {
   align-items: flex-end;
 }
 
-.flexbox {
-  width: 25%;
-  height: 75%;
-  text-align: center;
-  line-height: 100px;
-}
-
-#box-holder {
-  width: 400px;
-  margin: auto;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .purple {

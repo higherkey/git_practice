@@ -21,6 +21,7 @@ body {
   box-shadow: 0 0 10px 10px var(--default-bg-color);
   min-width: 400px;
   max-width: var(--default-max-width);
+  height: 100vh;
 }
 
 footer {
