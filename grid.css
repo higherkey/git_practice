@@ -1,0 +1,25 @@
+.grid-container {
+  background: lightgray;
+  width: 100%;
+  font-size: 40px;;
+}
+
+#box1 {
+  background: palevioletred
+}
+
+#box2 {
+  background: palegreen
+}
+
+#box3 {
+  background: Lightpink;
+}
+
+#box4 {
+  background: lightsalmon
+}
+
+#box5 {
+  background: paleturquoise
+}
