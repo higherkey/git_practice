@@ -11,11 +11,14 @@ h2 {
   margin: auto;
 }
 
+.space-box {
+  width: 20%;
+  height: 75%;
+}
+
 .flexbox {
   width: 25%;
-  height: 75%;
-  text-align: center;
-  line-height: 100px;
+  height: 100%;
 }
 
 .display-container {
@@ -28,10 +31,26 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 80vh;
+  height: 75vh;
 }
 
 /* Visuals */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -58,16 +77,20 @@ h2 {
 
 .flex-wrap {
   flex-wrap: wrap;
+  height: 75px;
 }
 
-.purple {
-  background-color: var(--default-accent-purple);
+/* default: flex: 0, 1, auto; */
+.grow {
+  flex-basis: 50%;
+  flex-grow: 2;
 }
 
-.light-purple {
-  background-color: var(--default-accent-light-purple);
+.shrink {
+  flex-basis: 50%;
+  flex-shrink: 1;
 }
 
-.green {
-  background-color: var(--default-accent-green);
+.basis {
+  flex-basis: 75%;
 }
