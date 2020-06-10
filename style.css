@@ -25,9 +25,10 @@ body {
 }
 
 footer {
-  position: relative;
-  left: 5%;
-  padding: 10px;
+  /* margin-left: 5%; */
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
 }
 
 h1 {
