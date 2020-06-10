@@ -57,14 +57,14 @@
 /* Shapes */
 #crescent-shadow {
   position: relative;
-  background-color: var(--default-accent-red);
+  background-color: var(--default-accent-orange);
 }
 #crescent-shadow:hover {
   right: 30px;
   bottom: 10px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 25px 10px 0px 0px var(--default-accent-red);
+  box-shadow: 25px 10px 0px 0px var(--default-accent-orange);
 }
 
 #heart {
@@ -116,7 +116,7 @@
     background-color: var(--default-accent-blue);
   }
   75% {
-    background-color: var(--default-accent-red);
+    background-color: var(--default-accent-orange);
   }
   100% {
     background-color: white;
