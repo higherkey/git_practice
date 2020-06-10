@@ -41,14 +41,14 @@
 }
 
 #skew {
-  background-color: orange;
+  background-color: var(--default-accent-yellow);
 }
 #skew:hover {
   transform: skewY(25deg);
 }
 
 #scale {
-  background-color: cyan;
+  background-color: var(--default-accent-blue);
 }
 #scale:hover {
   transform: scale(1.25);
@@ -57,18 +57,18 @@
 /* Shapes */
 #crescent-shadow {
   position: relative;
-  background-color: rgb(255, 0, 127);
+  background-color: var(--default-accent-red);
 }
 #crescent-shadow:hover {
   right: 30px;
   bottom: 10px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 25px 10px 0px 0px rgb(255, 0, 127);
+  box-shadow: 25px 10px 0px 0px var(--default-accent-red);
 }
 
 #heart {
-  background-color: pink;
+  background-color: var(--default-accent-pink);
   transform: rotate(-45deg);
   height: 40px;
   width: 45px;
@@ -78,7 +78,7 @@
 }
 #heart::before {
   content: "";
-  background-color: pink;
+  background-color: var(--default-accent-pink);
   border-radius: 50%;
   position: absolute;
   top: -25px;
@@ -88,7 +88,7 @@
 }
 #heart::after {
   content: "";
-  background-color: pink;
+  background-color: var(--default-accent-pink);
   border-radius: 50%;
   position: absolute;
   width: 50px;
@@ -110,13 +110,13 @@
 
 @keyframes colorful {
   25% {
-    background-color: orange;
+    background-color: var(--default-accent-yellow);
   }
   50% {
-    background-color: cyan;
+    background-color: var(--default-accent-blue);
   }
   75% {
-    background-color: rgb(255, 0, 127);
+    background-color: var(--default-accent-red);
   }
   100% {
     background-color: white;
@@ -130,7 +130,7 @@
 
 @keyframes change {
   100% {
-    background-color: #00ff80;
+    background-color: var(--default-accent-green);
   }
 }
 

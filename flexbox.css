@@ -36,19 +36,19 @@ h2 {
 
 /* Visuals */
 .red {
-  background-color: red;
+  background-color: var(--default-accent-red);
 }
 
 .green {
-  background-color: green;
+  background-color: var(--default-accent-green);
 }
 
 .blue {
-  background-color: blue;
+  background-color: var(--default-accent-blue);
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: var(--default-accent-yellow);
 }
 
 .justify-center {

@@ -13,26 +13,26 @@
 }
 
 #box1 {
-  background: palegreen;
+  background: var(--default-accent-green);
   grid-area: header;
 }
 
 #box2 {
-  background: palegoldenrod;
+  background: var(--default-accent-yellow);
   grid-area: main;
 }
 
 #box3 {
-  background: Lightpink;
+  background: var(--default-accent-pink);
   grid-area: sidebar1;
 }
 
 #box4 {
-  background: lightsalmon;
+  background: var(--default-accent-red);
   grid-area: sidebar2;
 }
 
 #box5 {
-  background: paleturquoise;
+  background: var(--default-accent-blue);
   grid-area: footer;
 }

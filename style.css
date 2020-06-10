@@ -2,8 +2,12 @@
   --default-bg-color: rgb(244, 250, 252);
   --default-accent-purple: #b4ade6;
   --default-accent-light-purple: #ede7f5;
-  --default-accent-green: #ade6bb;
-  --default-title-bg-color: lightblue;
+  --default-accent-green: palegreen;
+  --default-accent-yellow: palegoldenrod;
+  --default-accent-pink: Lightpink;
+  --default-accent-red: lightsalmon;
+  --default-accent-blue: paleturquoise;
+  --default-title-bg-color: paleturquoise;
   --default-max-width: 800px;
 }
 
@@ -25,9 +29,6 @@ body {
 }
 
 footer {
-  /* margin-left: 5%; */
-  position: absolute;
-  bottom: 0;
   margin: 10px;
 }
 
