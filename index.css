@@ -10,3 +10,8 @@ main {
   position: relative;
   left: 5%;
 }
+
+h3 {
+  padding: 5px 0;
+  margin-bottom: 0;
+}

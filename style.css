@@ -68,10 +68,11 @@ h2 {
   text-decoration: underline;
 }
 
-.coming-soon {
+.header-italic-span {
   text-transform: uppercase;
   font-style: italic;
   font-size: smaller;
+  font-weight: normal;
 }
 
 #return {
