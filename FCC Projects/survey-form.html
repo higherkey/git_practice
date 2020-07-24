@@ -1,0 +1,89 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/survey-form.css">
+  <title>FCC Product Landing Page</title>
+</head>
+<body>
+
+  <h1 id="title" class="text-center">AlphabyteIT Survey Form</h1>
+  <p id="description" class="text-center">Please share your technology support experience</p>
+
+  <main>
+    <form action="" id="survey-form">
+      <div class="wrapper">
+        <label for="name" id="name-label">Name</label>
+        <input class="input-text" type="text" name="name" id="name" placeholder="Enter your name" required/>
+      </div>
+      <div class="wrapper">
+        <label for="email" id="email-label">Email</label>
+        <input class="input-text" type="email" name="email" id="email" placeholder="Enter your email" required/>
+      </div>
+      <div class="wrapper">
+        <label for="number" id="number-label">Age</label>
+        <input class="input-text" type="number" name="number" id="number" placeholder="Age" min="1" max="111">
+      </div>
+
+      <div class="wrapper">
+        <p class="descriptor">Would you recommend Alphabyte to a friend?</p>
+        <label>
+          <input type="radio" name="recommend" id="definitely" value="definitely" class="input-radio-check" checked>
+        Definitely</label>
+        <label for="absolutely">
+          <input type="radio" name="recommend" id="absolutely" value="absolutely" class="input-radio-check">
+        Maybe</label>
+        <label for="certainly">
+          <input type="radio" name="recommend" id="certainly" value="certainly" class="input-radio-check">
+        No</label>
+      </div>
+
+      <div class="wrapper">
+        <label for="dropdown">What service did you use?</label>
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value="">Select an option</option>
+          <option value="support">Home IT Support</option>
+          <option value="education">Technology Education</option>
+          <option value="build">Custom Computer Build</option>
+          <option value="other-service">Other</option>
+        </select>
+      </div>
+
+      <div class="wrapper" id="checkboxes">
+        <p class="descriptor">What was the method of consultation? (check all that apply)</p>
+          <label for="phone">
+            <input type="checkbox" id="phone" name="phone" value="phone" class="input-radio-check">
+          Phone</label>
+          <label for="video">
+            <input type="checkbox" name="video" id="video" value="video" class="input-radio-check">
+          Video</label>
+          <label for="person">
+            <input type="checkbox" name="person" id="person" value="person" class="input-radio-check">
+          In Person</label>
+          <label for="other-method">
+            <input type="checkbox" name="other-method" id="other-method" value="other-method" class="input-radio-check">
+          Other</label>
+      </div>
+
+      <div class="wrapper">
+        <div>
+          <label for="comment">Any additional comments or suggestions?</label>
+        </div>
+        <textarea class="input-text" name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <nav id="return">
+      <a href="./index.html" class="return-main" accesskey="m">Return to Main</a>
+    </nav>
+  </footer>
+</body>
+</html>

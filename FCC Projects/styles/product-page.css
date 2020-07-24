@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(#FFF 65px, #EEE, #CCC);
+  font-family: 'Montserrat', sans-serif;
+  /* height: 100%; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/*** Header Section ***/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #FFF;
+  height: 65px;
+  width: 100vw;
+  padding: 10px;
+}
+
+#header-img{
+  height: 30px;
+  width: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: inherit;
+}
+
+nav {
+  display: flex;
+  width: 35vw;
+  justify-content: space-around;
+}
+
+nav > a {
+  line-height: .5em;
+}
+
+/* nav>ul {
+  display: flex;
+  justify-content: space-around;
+  width: 35vw;
+} */
+
+/*** Main section ***/
+
+main {
+  margin: 50px auto 0;
+  max-width: 1000px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+#hero>form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.container > section {
+  min-height: 100px;
+}
+
+.section-header {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#services {
+  
+}
+
+#pricing {
+  display: grid;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*** Footer Section ***/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #c0c0c0;
+  width: 100%;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.links>a {
+  padding: 0 8px;
+  font-size: .9em;
+}
+
+#copyright {
+  display: flex;
+  justify-content: flex-end;
+  font-size: .75em;
+  margin: 4px 0;
+  letter-spacing: .1em;
+}
