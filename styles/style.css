@@ -12,6 +12,9 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -22,7 +25,6 @@ html {
 body {
   background-color: var(--default-bg-color);
   margin: auto;
-  box-shadow: 0 0 10px 10px var(--default-bg-color);
   min-width: 400px;
   max-width: var(--default-max-width);
   height: 100vh;
@@ -78,6 +80,16 @@ h3 {
   font-style: italic;
   font-size: smaller;
   font-weight: normal;
+}
+
+.coming-soon {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.default-box-shadow {
+  box-shadow: 0 0 10px 10px var(--default-bg-color);
 }
 
 #return {
