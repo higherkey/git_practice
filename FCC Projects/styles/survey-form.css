@@ -17,12 +17,27 @@ body {
   align-items: center;
   /* margin: 0 auto; */
   color: white;
+  min-width: 420px;
 }
 
 main {
   background: rgba(10, 10, 30, .5);
   padding: 20px;
   border-radius: 5px;
+  margin-top: 20px;
+  width: 800px;
+}
+
+@media (max-width: 830px){
+  main {
+    width: 640px;
+  }
+}
+
+@media (max-width: 660px){
+  main {
+    width: 460px;
+  }
 }
 
 form {
@@ -38,7 +53,6 @@ input,
 button,
 select,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: inherit;
   border-radius: 3px;
@@ -52,8 +66,11 @@ label {
 
 input {
   padding: 2px;
-  margin-right: 4px;
   border: none;
+}
+
+button {
+  padding: 5px 0;
 }
 
 .text-center {
@@ -71,11 +88,11 @@ input {
 
 .input-radio-check {
   display: inline-block;
-/*   height: 20px; */
+  margin-right: 3px;
 }
 
 .input-text {
-  width: 99%;
+  width: 100%;
   padding: 6px 10px;
 }
 
@@ -91,4 +108,18 @@ input {
   border: none;
   background: #b53147;
   color: white;
+}
+
+.return {
+  color: white;
+  padding: 0 10px;
+}
+
+#return {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: smaller;
+  margin-top: 5px;
+  padding: 5px 5px 0 5px;
 }
