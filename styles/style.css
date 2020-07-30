@@ -22,12 +22,24 @@ html {
   background-color: white;
 }
 
-body {
+/* body {
   background-color: var(--default-bg-color);
   margin: auto;
   min-width: 400px;
   max-width: var(--default-max-width);
   height: 100vh;
+} */
+
+.body-default {
+  background-color: var(--default-bg-color);
+  margin: auto;
+  min-width: 400px;
+  max-width: var(--default-max-width);
+  height: 100vh;
+}
+
+.default-box-shadow {
+  box-shadow: 0 0 10px 10px var(--default-bg-color);
 }
 
 footer {
@@ -88,16 +100,16 @@ h3 {
   font-size: smaller;
 }
 
-.default-box-shadow {
-  box-shadow: 0 0 10px 10px var(--default-bg-color);
+#return {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: smaller;
+  /* width: 200px; */
 }
 
-#return {
-  display: grid;
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  font-size: smaller;
+.return-link {
+  padding: 0 10px;
 }
 
 /***** List Formatting *****/
