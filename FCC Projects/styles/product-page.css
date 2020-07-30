@@ -42,12 +42,9 @@ header {
 
 nav {
   display: flex;
-  width: 35vw;
   justify-content: space-around;
-}
-
-nav > a {
-  line-height: .5em;
+  width: 500px;
+  padding-right: 20px;
 }
 
 /* nav>ul {
