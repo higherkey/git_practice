@@ -12,38 +12,27 @@
 </head>
 
 <body>
+  <!-- Testing Script from FCC. Comment out to disable. -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+
   <header id="header">
     <div class="logo">
-      <img id="header-img" src="https://github.com/higherkey/git_practice/blob/master/Ai%20kanji.png?raw=true" alt="Company Logo">
+      <img id="header-img" src="https://raw.githubusercontent.com/higherkey/git_practice/main/Ai%20kanji.png" alt="Company Logo">
       <h2>AlphabyteIT</h2>
     </div>
     <nav id="nav-bar">
-      <!-- <ul>
-        <li>
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#how-it-works">How It Works</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
-      </ul> -->
       <a class="nav-link" href="#services">Services</a>
       <a class="nav-link" href="#pricing">Pricing</a>
       <a class="nav-link" href="#testimonials">Testimonials</a>
-      <p>|</p>
-      <a class="nav-link" href="./fcc-landing-page.html" accesskey="r">Return</a>
-      <a class="nav-link" href="../index.html" accesskey="h">Home</a>
     </nav>
   </header>
-  
+
   <main>
     <section id="hero">
       <h1>Home IT Support for Every Need</h1>
-      <form action="" id="form">
-        <input type="text" placeholder="Enter your email address">
-        <button>Get Started</button>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Get Started">
       </form>
     </section>
 
@@ -56,10 +45,12 @@
           <li>Custom Computer Build</li>
         </ul>
       </section>
+
       <section id="pricing">
         <h2 class="section-header">Pricing</h2>
 
       </section>
+
       <section id="testimonials">
         <h2 class="section-header">Testimonials</h2>
         <video id="video" type="video" height="315" controls src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0">Customer testimonial video</video>
@@ -72,6 +63,9 @@
       <a href="">Privacy</a>
       <a href="">Terms</a>
       <a href="">Contact</a>
+      <p>|</p>
+      <a href="./fcc-landing-page.html" accesskey="r">Return</a>
+      <a href="../index.html" accesskey="h">Home</a>
     </div>
     <p id="copyright">Copyright 2020, AlphabyteIT</p>
   </footer>
