@@ -9,6 +9,7 @@
 html {
   background: linear-gradient(#FFF 65px, #EEE, #CCC);
   font-family: 'Montserrat', sans-serif;
+  transition: all 1s;
   /* height: 100%; */
 }
 
@@ -133,3 +134,23 @@ footer {
   margin: 4px 0;
   letter-spacing: .1em;
 }
+
+@media screen and (max-width: 650px) {
+  video {
+    width: 400px;
+    height: 275px;
+  }
+}
+
+/* @media screen and (min-width: 600px) {
+  body {
+    background: linear-gradient(#FFF 65px, #EEE, #CCC);
+  }
+} */
+
+
+/* @media (hover: hover) {
+  #submit {
+    background-color: orange;
+  }
+} */
